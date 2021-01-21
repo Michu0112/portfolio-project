@@ -294,6 +294,9 @@ h2#opinion-tag{
     #benefits{
         height: 800px;
     }
+    #benefits div p{
+        text-align: center;
+    }
 }
 @media (max-width: 1460px){
     .contacts{
@@ -318,6 +321,9 @@ h2#opinion-tag{
         flex-direction: column;
         margin: 0px;
     }
+    .contacts p{
+        text-align: center;
+    }
     div.linkedIn{
         flex-direction: row;
         width: 100%;
@@ -325,6 +331,12 @@ h2#opinion-tag{
     }
     div.linkedIn p{
         margin: 0 10px;
+    }
+    .anim-sub-paragraph{
+        padding: 0;
+    }
+    .abs-text-holder{
+        padding: 20px;
     }
 }
 .hamburger--active #mid{
@@ -340,6 +352,21 @@ h2#opinion-tag{
     #opinions div.user{
         flex-direction: column;
         align-items: flex-start;
+    }
+    #spec div {
+        text-align: center;
+        width: 100%;
+    }
+    #opinions h2{
+        font-size: 1.4em;
+    }
+    h2#opinion-tag{
+        font-size: 3em;
+        text-align: center;
+    }
+    #contact div{
+        width: 100%;
+        text-align: center;
     }
     .nav-bar{
         height: 100vh;
