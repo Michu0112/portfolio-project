@@ -25,19 +25,14 @@ class Opinions {
         for(let i = 0; i < arrayStars.length; i++){
             full.innerHTML += arrayStars[i].outerHTML;
         }
-        const opinion = `
-            <div>
-                <img src="images/user-alt-512.png" alt="user-photo">
-                <div class="opinion-text">
-                    <h2>${this.name}</h2>
-                    <p>${this.opinion}</p>
-                </div>
-            </div>
-        `;
-
+        const opinion = document.querySelector('template');
+        const opinionBody = document.importNode(opinion.content, true);
+        opinionBody.querySelector('h2').textContent = this.name;
+        opinionBody.querySelector('p').textContent = this.opinion;
+    
         let user = document.createElement('div');
         user.className = 'user';
-        user.innerHTML = opinion;
+        user.append(opinionBody);
         user.append(full);
         const opinionsBox = document.querySelector('.opinions');
 
@@ -56,8 +51,9 @@ class Ratings {
     }
 }
 
-const btn = document.getElementById('btn-op').addEventListener('click', () =>{
+const btn = document.getElementById('btn-op').addEventListener('click', (event) =>{
     Ratings.init();
+    event.target.disabled = true;
 });
 
 //nav-bar
