@@ -1,0 +1,428 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    background-image: linear-gradient( to bottom, #c3d9e7,  #c3d9e7);
+    overflow-x: hidden;
+    width: 100vw;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav-bar{
+    background-color: rgba(255, 255, 255, 0.637);
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+    z-index: 10;
+}
+.nav-bar div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 20px;
+    margin-left: 50px;
+    transition: .2s;
+}
+.abs-text-holder{
+    position: absolute;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    top: 10%;
+    padding: 80px;
+    align-items: flex-start;
+}
+.anim-sub-paragraph{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 50px;
+    border: 2px solid #c3d9e7;
+    padding: 10px;
+}
+.anim-paragraph{
+    font-size: 4em;
+}
+.nav-bar a:hover{
+    color: #96cdf0;
+}
+.nav-bar img{
+    width: 150px;
+}
+.banner{
+    background-image: url('/images/malowanie-zlecenia-oferty-a.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+}
+#benefits{
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    font-weight: bold;
+}
+h2{
+    color: #3baaee;
+    font-size: 3em;
+}
+#benefits div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1em;
+}
+#benefits div img{
+    padding-left: 10px;
+    border-left: 3px solid rgb(62, 184, 224);
+}
+#spec{
+    background-color: white;
+    height: 400px;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#spec div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    padding: 30px;
+}
+#spec h2{
+    font-size: 3em;
+    font-weight: bolder;
+    color: #3baaee;
+}
+.specs{
+    display: flex;
+    font-size: 1.1em;
+    font-weight: 700;
+    width: 100%;
+}
+.specs img{
+    margin: 0 20px;
+    border-left: 3px solid rgb(62, 184, 224);
+    padding-left: 10px;
+}
+#contact{
+    height: 400px;
+    background-color: white;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+.contacts{
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 50px;
+}
+#contact div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 30px;
+}
+.contacts div{
+    height: 50px;
+}
+#contact img{
+    margin: 0 20px;
+    border-left: 3px solid rgb(62, 184, 224);
+    padding-left: 10px;
+}
+#opinions{
+    height: fit-content;
+    background-color: white;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: .5s;
+}
+#opinions h2{
+    font-size: 2em;
+}
+.opinion-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bold;
+}
+h2#opinion-tag{
+    padding: 30px;
+    font-size: 3em;
+}
+#nav-btn{
+    display: none;
+}
+#opinions div.user{
+    display: flex;
+    border: 1px solid rgb(62, 184, 224);
+    margin: 30px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+#opinions div.user img{
+    width: 50px;
+}
+#opinions div.user .four img:nth-child(5){
+    filter: saturate(0);
+}
+#opinions div.user div{
+    display: flex;
+}
+#opinions img{
+    width: 100px;
+    margin: 20px;
+}
+.info{
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 20px;
+    color: rgb(62, 184, 224);
+}
+
+.linkedIn img{
+    width: 50px;
+}
+.linkedIn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+}
+#btn-op{
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid rgb(62, 184, 224);
+    font-size: 1.4em;
+    margin: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+#btn-op:hover{
+    background-color:  rgb(62, 184, 224);
+    color: white;
+}
+#copyright{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+    align-items: center;
+    padding: 10px;
+    background-color:  rgb(62, 184, 224);
+    font-weight: bold;
+}
+#mid{
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    transition: .4s;
+    content: '';
+    z-index: 100;
+    background-color: black;
+}
+#mid::before{
+    content: '';
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    top: -10px;
+    transition: .4s;
+}
+#mid::after{
+    content: '';
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    top: 10px;
+    transition: .4s;
+}
+.hamburger--active{
+    height: 3px;
+    width: 80%;
+    background-color: black;
+}
+@media (max-width:1800px){
+    #benefits-list{
+        flex-direction: column;
+        height: 800px;
+    }
+    #benefits div img{
+        border-left: none;
+        border-top: 3px solid rgb(62, 184, 224);
+        padding: 20px;
+    }
+    #benefits{
+        height: 800px;
+    }
+}
+@media (max-width: 1460px){
+    .contacts{
+        flex-direction: column;
+        height: fit-content;
+    }
+    #contact img{
+        border-left: none;
+        border-top: 3px solid rgb(62, 184, 224);
+        padding: 20px;
+    }
+    #contact{
+        height: 750px;
+    }
+    #copyright{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 150px;
+    }
+    .contacts div{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    div.linkedIn{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    div.linkedIn p{
+        margin: 0 10px;
+    }
+}
+.hamburger--active #mid{
+    background-color: transparent;
+}
+.hamburger--active #mid::before{
+    transform: translateY(10px) rotate(45deg);
+}
+.hamburger--active #mid::after{
+    transform: translateY(-10px) rotate(-45deg);
+}
+@media (max-width:1044px){
+    #opinions div.user{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-bar{
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 50px;
+        position: fixed;
+        transition: .4s;
+        background-color: white;
+    }
+    .overflowHidden{
+        overflow: hidden;
+    }
+    .anim-sub-paragraph{
+        width: 300px;
+    }
+    #nav-btn{
+        position: fixed;
+        display: block;
+        top: 20px;
+        left: 20px;
+        background-color: transparent;
+        border: 2px solid black;
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .nav-bar div{
+        flex-direction: column;
+    }
+    .nav-bar a{
+        margin: 30px;
+    }
+    #spec div{
+        height: 700px;
+    }
+    .specs{
+        flex-direction: column;
+    }
+    .specs img{
+        border-left: none;
+        border-top: 3px solid rgb(62, 184, 224);
+    }
+    .specs div{
+        flex-direction: column;
+    }
+    #spec{
+        height: 800px;
+        justify-content: space-around;
+    }
+    #opinions div.user img{
+        width: 50px;
+        height: 55px;
+    }
+    #opinions div.full img{
+        width: 20px;
+        height: 20px;
+    }
+    #contact div{
+        margin: 0;
+    }
+    #contact div{
+        margin-bottom: 20px;
+    }
+    p.info{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .specs img{
+        padding: 20px;
+    }
+    #copyright{
+        font-size: 1em;
+        text-align: center;
+    }
+    .showMenu{
+        left: 0;
+    }
+}
