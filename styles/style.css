@@ -292,7 +292,7 @@ h2#opinion-tag{
         padding: 20px;
     }
     #benefits{
-        height: 800px;
+        height: fit-content;
     }
     #benefits div p{
         text-align: center;
@@ -412,6 +412,7 @@ h2#opinion-tag{
     }
     .specs{
         flex-direction: column;
+        justify-content: space-around;
     }
     .specs img{
         border-left: none;
@@ -451,5 +452,19 @@ h2#opinion-tag{
     }
     .showMenu{
         left: 0;
+    }
+    #benefits h2{
+        font-size: 2.5em;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+    #benefits-list p{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:500px){
+    #spec div{
+        height: fit-content;
     }
 }
