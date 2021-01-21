@@ -55,9 +55,15 @@ html{
     margin-top: 50px;
     border: 2px solid #c3d9e7;
     padding: 10px;
+    opacity: 0;
+    transform: translateY(70px);
+    transition: transform 1s, opacity 1s;
 }
 .anim-paragraph{
     font-size: 4em;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
 }
 .nav-bar a:hover{
     color: #96cdf0;
@@ -281,6 +287,9 @@ h2#opinion-tag{
     width: 80%;
     background-color: black;
 }
+#mobile-logo{
+    display: none;
+}
 @media (max-width:1800px){
     #benefits-list{
         flex-direction: column;
@@ -349,9 +358,27 @@ h2#opinion-tag{
     transform: translateY(-10px) rotate(-45deg);
 }
 @media (max-width:1044px){
+    .anim-paragraph{
+        font-size: 3em;
+    }
+    .anim-sub-paragraph{
+        font-size: 2em;
+        padding: 20px;
+    }
     #opinions div.user{
         flex-direction: column;
         align-items: flex-start;
+    }
+    #mobile-logo{
+        display: block;
+        position: absolute;
+        width: 200px;
+        top: 70px;
+        left: 50%;
+        margin-left: -100px;
+        transform: translateY(-70px);
+        opacity: 0;
+        transition: transform 1s, opacity 1s;
     }
     #spec div {
         text-align: center;
@@ -400,6 +427,9 @@ h2#opinion-tag{
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        transform: translateY(-70px);
+        opacity: 0;
+        transition: transform 1s, opacity 1s;
     }
     .nav-bar div{
         flex-direction: column;
